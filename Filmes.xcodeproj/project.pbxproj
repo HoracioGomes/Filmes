@@ -13,6 +13,7 @@
 		96C30F06286C47EB00606C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C30F04286C47EB00606C04 /* Main.storyboard */; };
 		96C30F08286C47EE00606C04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C30F07286C47EE00606C04 /* Assets.xcassets */; };
 		96C30F0B286C47EE00606C04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C30F09286C47EE00606C04 /* LaunchScreen.storyboard */; };
+		96C30F13286C4C5900606C04 /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C30F12286C4C5900606C04 /* Filme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		96C30F07286C47EE00606C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96C30F0A286C47EE00606C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96C30F0C286C47EE00606C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96C30F12286C4C5900606C04 /* Filme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				96C30F00286C47EB00606C04 /* SceneDelegate.swift */,
 				96C30F02286C47EB00606C04 /* ViewController.swift */,
 				96C30F04286C47EB00606C04 /* Main.storyboard */,
+				96C30F12286C4C5900606C04 /* Filme.swift */,
 				96C30F07286C47EE00606C04 /* Assets.xcassets */,
 				96C30F09286C47EE00606C04 /* LaunchScreen.storyboard */,
 				96C30F0C286C47EE00606C04 /* Info.plist */,
@@ -141,6 +144,7 @@
 				96C30F03286C47EB00606C04 /* ViewController.swift in Sources */,
 				96C30EFF286C47EB00606C04 /* AppDelegate.swift in Sources */,
 				96C30F01286C47EB00606C04 /* SceneDelegate.swift in Sources */,
+				96C30F13286C4C5900606C04 /* Filme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
