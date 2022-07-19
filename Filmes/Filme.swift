@@ -12,9 +12,10 @@ var titulo: String!
 var descricao: String!
 var imagem: UIImage!
     
-init (titulo: String, descricao: String) {
+    init (titulo: String, descricao: String, capa: UIImage) {
     self.titulo = titulo
     self.descricao = descricao
+    self.imagem = capa
 }
     
 }
