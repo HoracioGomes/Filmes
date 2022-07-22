@@ -69,6 +69,16 @@ class ViewController: UITableViewController {
 //        celula?.imageView?.image = filme.imagem
         return celula
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue_detalhes_filme"{
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let filme = self.filmes[indexPath.row]
+                let destino = segue.destination as! DetalhesFilmeViewController
+                destino.filme = filme
+            }
+        }
+    }
 
 
 }

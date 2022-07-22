@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,6 +59,7 @@
                                     <outlet property="capa" destination="drt-3G-nVW" id="Ucj-Lz-3gQ"/>
                                     <outlet property="descricao" destination="aX8-5d-JTF" id="2db-gx-LAt"/>
                                     <outlet property="titulo" destination="6xB-yK-qHp" id="W9u-PW-hf5"/>
+                                    <segue destination="7hm-zZ-Izh" kind="show" identifier="segue_detalhes_filme" id="pNx-Sa-KOY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -71,6 +73,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajm-Hq-MGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="342.02898550724638" y="93.75"/>
+        </scene>
+        <!--Detalhes Filme View Controller-->
+        <scene sceneID="VmK-bu-rbm">
+            <objects>
+                <viewController id="7hm-zZ-Izh" customClass="DetalhesFilmeViewController" customModule="Filmes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="683-uR-MzN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYG-Vj-JZB">
+                                <rect key="frame" x="25" y="476" width="365" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjG-C4-oXQ">
+                                <rect key="frame" x="25" y="547" width="365" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filme1" translatesAutoresizingMaskIntoConstraints="NO" id="oLn-IH-EP1">
+                                <rect key="frame" x="40" y="112" width="334" height="268.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tkT-eF-CLe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="oLn-IH-EP1" secondAttribute="trailing" constant="20" id="Hhj-XC-xAE"/>
+                            <constraint firstItem="oLn-IH-EP1" firstAttribute="leading" secondItem="683-uR-MzN" secondAttribute="leadingMargin" constant="20" id="YPC-V4-ret"/>
+                            <constraint firstItem="oLn-IH-EP1" firstAttribute="top" secondItem="tkT-eF-CLe" secondAttribute="top" constant="24" id="bBm-45-Ydi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cS9-pz-Dan"/>
+                    <connections>
+                        <outlet property="capa" destination="oLn-IH-EP1" id="g0P-7K-wV1"/>
+                        <outlet property="descricao" destination="cjG-C4-oXQ" id="5sK-QD-X9q"/>
+                        <outlet property="titulo" destination="ZYG-Vj-JZB" id="ggg-d6-F7T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cS-JP-Nft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.4782608695652" y="102.45535714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Nl-oa-DEX">
@@ -92,6 +139,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="filme1" width="252.66667175292969" height="268.33334350585938"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
